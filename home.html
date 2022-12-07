@@ -12,6 +12,10 @@
         <meta charset="utf-8"/>
         <meta name="description" content="This is my website"/>
         <style>
+            :root{
+                --main-color: #0066ff;
+                --default-border: 1px solid var(--main-color);
+            }
             body{
                 height: 1000vh;
                 margin: 50px;
@@ -21,6 +25,13 @@
                 color: white;
                 font-size: 50px;
             }
+            p{
+                background-color: var(--main-color);
+            }
+            a{
+                color: var(--main-color);
+                border: var(--default-border);
+            }
         </style>
     </head>
     <body>
@@ -28,5 +39,8 @@
             Lorem ipsum dolor sit amet consectetur adipsicing elit. Quod commodi e
             sequi ipsam odio dolorem.
         </p>
+        <div>
+            <a href="#">website</a>
+        </div>
     </body>
 </html>
