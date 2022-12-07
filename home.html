@@ -12,6 +12,9 @@
         <meta charset="utf-8"/>
         <meta name="description" content="This is my website"/>
         <style>
+            *{
+                border: 1px dashed black;
+            }
             html{
                 background-color: tomato;
             }
@@ -21,7 +24,7 @@
                 background-color: thistle;
             }
             div{
-                padding: 10px;
+                padding: 20px;
             }
             #first{
                 background-color: whitesmoke;
@@ -38,10 +41,8 @@
                 height: 50px;
                 width: 50px;
             }
-            #fourth{
-                background-color: blanchedalmond;
-                height: 25px;
-                width: 25px;
+            span{
+                border-style: dotted;
             }
         </style>
     </head>
@@ -49,7 +50,7 @@
         <div id="first">
             <div id="second">
                 <div id="third">
-                    <div id="fourth"></div>
+                    <span>hello</span>
                 </div>
             </div>
         </div>
