@@ -12,34 +12,22 @@
         <meta charset="utf-8"/>
         <meta name="description" content="This is my website"/>
         <style>
-            a{
-                color: wheat;
-                background-color: tomato;
-                text-decoration: none;
-                padding: 3px 5px;
-                border-radius: 5px;
-                font-size: 55px;
-                transition: color 1s cubic-bezier(0.6,0,0.735,0.045),
-                 border-radius 5s ease-in-out, background-color 10s ease-out;
-            }
-            a:hover{
-                border-radius: 20px;
-                color: tomato;
-                background-color: wheat;
+            @keyframes superSexyCoinFlip{
+                from{
+                    transform: rotateY(0);
+                }
+                to{
+                    transform: rotateY(360deg) translate(100px);
+                }
             }
             img{
                 border: 10px solid black;
                 border-radius: 50%;
-                transition: all 500ms ease-in-out;
-                transform: scaleX(0.5) scaleY(0.4);
-            }
-            img:hover{
-                transform: scaleX(0.5) scaleY(0.4) translateX(-100px) translateY(-300px) skewX(45deg) scale(0.5);
+                animation: superSexyCoinFlip 5s linear infinite;
             }
         </style>
     </head>
     <body>
-        <img src="img/1.jpg" />
-        <span>hello</span>
+        <img src="img/1.jpg" width="500px" height="500px" />
     </body>
 </html>
